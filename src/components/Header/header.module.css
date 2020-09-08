@@ -1,0 +1,32 @@
+.header {
+    grid-area: h;
+    background-color: limegreen;
+    padding: 10px ;
+   }
+   header img {
+    width: 50px;
+   
+    background-color: lightgreen;
+    opacity: 1;
+    animation-duration: 10s;
+    animation-name: opacity_img;
+    animation-iteration-count: infinite ;
+  }
+
+  @keyframes opacity_img {
+    0%{opacity: 1;}
+    15%{opacity: 0.75;}
+    25%{opacity: 0.5;}
+    35%{opacity: 0.25;}
+    50%{opacity: 0.1;}
+    65%{opacity: 0.25;}
+    75%{opacity: 0.5;}
+    85%{opacity: 0.75;}
+    100%{opacity:1;}
+  }
+ 
+.authBlock {
+  color: white;
+  float: right;
+  margin: 10px;
+}  

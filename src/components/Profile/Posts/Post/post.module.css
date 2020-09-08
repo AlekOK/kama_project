@@ -1,0 +1,29 @@
+
+   
+ .item {
+    color: blue;
+    padding: 10px;
+    
+    
+ } 
+
+ .item img {
+   width: 30px;
+   height: 30px;
+   border-radius: 5px;
+   padding-right: 100px;
+}
+
+.avatarka {
+   background-color: darkorange;
+   
+}
+
+
+.like {
+   font-size: 20px;
+}
+
+.message {
+   background-color: chartreuse;
+}

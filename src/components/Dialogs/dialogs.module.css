@@ -1,0 +1,54 @@
+
+.dialogs {
+   /* grid-area: di; */
+
+    display: grid;
+  
+    grid-template-areas: "diName me";
+                      
+  
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 20px;
+  
+}
+
+
+.dialog_item {
+    grid-area: diName;
+    /* background-color: blueviolet; */
+    padding: 10px;
+  
+}
+
+.messages {
+    grid-area: me;
+    /* background-color: gold; */
+    padding: 10px;
+
+}
+
+
+
+.dialog {
+    color: tomato;
+}
+
+ .active {
+    color: white;
+
+}
+
+.dialog  a.activeLink {
+    color: gold;
+   
+}
+
+.postBlock {
+    /* grid-area: foo; */
+    padding: 10px;
+    /* background-color: gold; */
+ } 
+ 
+ .dialog_item :hover {
+  transform: scale(1.08);
+ }

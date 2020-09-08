@@ -1,0 +1,34 @@
+.foto {
+    width: 80px;
+    height: 90px;
+    margin: 10 auto;
+    border-radius: 50%;
+}
+
+.users {
+    margin: 10px;
+}
+
+.info {
+    margin-left: 120px;
+    background-color: rgb(100, 100, 200);
+} 
+
+.in{
+    margin-left: 120px;
+    background-color: rgb(100, 100, 200);
+    font-weight: 900;
+} 
+
+.buttonFoll {
+    color: red;
+
+}
+.buttonUnfoll {
+    color:green;
+}
+
+.selectedPage {
+    font-weight: 900;
+}
+

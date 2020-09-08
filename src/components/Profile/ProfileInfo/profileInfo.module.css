@@ -1,0 +1,10 @@
+
+.profileInfoBlock img{
+    width: 640px;
+    height: 300px;
+}
+
+.statusText {
+    background-color: white;
+    padding-left: 20px;
+}

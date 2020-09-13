@@ -11,7 +11,7 @@ const TOGGEL_IS_FOLLOWING_PROGRESS = 'TOGGEL_IS_FOLLOWING_PROGRESS';
 let initialState =  {
     users_data: [],
     page_size: 49,
-    total_page: 2,
+    total_page: 200,
     current_page: 1,
     isFetching: false,
     followingInProgress: []

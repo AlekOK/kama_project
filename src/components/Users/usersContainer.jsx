@@ -8,15 +8,14 @@ import { getUsers_data, getPage_size, getTotal_page, getCurrent_page, getIsFetch
 class UsersComponent extends React.Component {
 
     componentDidMount () {
-
-        this.props.getUsersThunk(this.props.current_page, this.props.page_size); 
+        const { current_page, page_size} = this.props;
+        this.props.getUsersThunk(current_page, page_size); 
     };
 
-        onPageChanged = (el) => {
-        this.props.setCurrentPage(el);   
-        this.props.getUsersThunk( el, this.props.page_size); 
-           
-        }
+    onPageChanged = (el) => {
+        const { page_size } = this.props;
+        this.props.getUsersThunk(el, page_size); 
+    };
 
     render() {
         return <>

@@ -23,17 +23,17 @@ const appReducer = (state = initialState, action) => {
         default:
             return state; 
     }
-}
+};
 
 export const initializedSuccess = () => ({   type: INITIOLIZED_SUCCESS});   
 
 export const initializeApp = () => {
-    return (dispatch) =>{
+    return (dispatch) => {
         let auhtMeResultPromise = dispatch(authMe());
         auhtMeResultPromise.then( () => {
             dispatch(initializedSuccess())
         });
     } 
-}
+};
 
 export default appReducer ;

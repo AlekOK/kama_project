@@ -9,10 +9,10 @@ import sss from "../Common/FormsControls/formControlTextArea.module.css";
 
 const maxLength25 = maxLegnthCreator(25);
 
-const LoginForm = (props) => {
+const LoginForm = ({handleSubmit, error}) => {
 
     return (
-            <form onSubmit= {props.handleSubmit}>
+            <form onSubmit= {handleSubmit}>
                 <div>
                     <Field  name= "email" placeholder={"email"}  component={Input} 
                             type= 'text' validate= {[required, maxLength25]}/>
@@ -27,14 +27,14 @@ const LoginForm = (props) => {
                     <Field name= "rememberMe" type={"checkbox"} component={Input}/> Remember me
                 </div>
 
-                { props.error && <div className= {sss.formCommonError}>{props.error}</div>}
+                { error && <div className= {sss.formCommonError}>{error}</div>}
 
                 <div>
                     <button>LOGIN</button>
                 </div>
             </form>
     )
-}
+};
 
 const LoginReducerForm = reduxForm({form: 'login'})(LoginForm);
 

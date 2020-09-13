@@ -15,11 +15,9 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import Preloader from './components/Common/Preloader/preloader';
 
-
 class App extends React.Component {
 
   componentDidMount() {
-
     this.props.initializeApp();
   }
 
@@ -27,7 +25,7 @@ class App extends React.Component {
 
     if (!this.props.initialized) {
       return <Preloader />
-    }
+    };
 
     return (
            
@@ -54,14 +52,14 @@ class App extends React.Component {
 
         </div>
     );
-  }
+  };
 };
 
 const mapStateToProps = (state) => {
   return {
     initialized: state.app.initialized
-  }
-}
+  };
+};
 
 export default compose(
   withRouter,

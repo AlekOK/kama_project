@@ -10,7 +10,7 @@ export const usersAPI = {
 
     getUsers(current_page= 1, page_size= 9) {
         return instans.get(`users?page=${current_page}&count=${page_size}`)
-            .then(response=> {return response.data})
+            .then(response => {return response.data})
     },
 
     changeFollow(id) {

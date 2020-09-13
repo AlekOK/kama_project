@@ -10,7 +10,7 @@ class UsersComponent extends React.Component {
     componentDidMount () {
 
         this.props.getUsersThunk(this.props.current_page, this.props.page_size); 
-    }
+    };
 
         onPageChanged = (el) => {
         this.props.setCurrentPage(el);   
@@ -34,7 +34,7 @@ class UsersComponent extends React.Component {
             />
         </>
     }
-}  
+}; 
     
 let mapStateToProps = (state) => {
    

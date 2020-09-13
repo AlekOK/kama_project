@@ -3,8 +3,6 @@ import sss from './users.module.css';
 import noob from '../../assets/images/users.jpg';
 import { NavLink } from 'react-router-dom';
 
-
-
 let Users = (props) => {
 
     let pagesCount = Math.ceil( props.total_page / props.page_size);
@@ -51,7 +49,6 @@ let Users = (props) => {
                 </span>
             </div>)}
         </div>)
-}
-
+};
 
 export default Users;

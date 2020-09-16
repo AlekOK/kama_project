@@ -3,10 +3,9 @@ import sss from './profileInfo.module.css';
 import Preloader from '../../Common/Preloader/preloader';
 import ProfileStatusWithHook from './profileStatusWithHook';
 
+const ProfileInfo = ({profile, status, updateStatus, ...props}) => {
 
-const ProfileInfo =   (props) => {
-
-    if (!props.profile ) {
+    if ( !profile ) {
         return <Preloader/>
     }
 
@@ -18,19 +17,19 @@ const ProfileInfo =   (props) => {
             </div>
             <br></br>
 
-            <ProfileStatusWithHook status= {props.status}  updateStatus= {props.updateStatus}/>
+            <ProfileStatusWithHook status= {status}  updateStatus= {updateStatus}/>
             
             <br></br>
             <div className={sss.profileInfoBlock}>
-              <img src= {props.profile.photos.large}></img>
+              <img src= {profile.photos.large}></img>
             </div>
 
             <div style= {{backgroundColor: 'white'}}>
-                {props.profile.fullName + props.profile.aboutMe}
+                {profile.fullName + profile.aboutMe}
             </div>
 
         </div>    
-            );
+    )
 };
 
 export default ProfileInfo; 

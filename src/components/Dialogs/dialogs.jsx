@@ -26,7 +26,7 @@ let addNewTextMessage = (values) => {
             </div>
 
             <div className={sss.messages}>
-               { message_elements}
+               { message_elements }
             </div>
         
             <AddMessageReduxForm onSubmit= {addNewTextMessage} /> 

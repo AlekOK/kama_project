@@ -13,6 +13,7 @@ const LoginForm = ({handleSubmit, error}) => {
 
     return (
             <form onSubmit= {handleSubmit}>
+                
                 <div>
                     <Field  name= "email" placeholder={"email"}  component={Input} 
                             type= 'text' validate= {[required, maxLength25]}/>
@@ -39,6 +40,7 @@ const LoginForm = ({handleSubmit, error}) => {
 const LoginReducerForm = reduxForm({form: 'login'})(LoginForm);
 
 const LoginPage = (props) => {
+    
     const onSubmit = (formData) => {
         props.logIn(formData.email, formData.password, formData.rememberMe)
     }
@@ -53,12 +55,13 @@ const LoginPage = (props) => {
             <LoginReducerForm onSubmit= {onSubmit}/>
         </div>
     )
-}
+};
 
 const mapStateToProps = (state) => {
+
     return {
         isAuth: state.auth.isAuth
     }
-} 
+}; 
 
 export default connect(mapStateToProps, {logIn})(LoginPage); 

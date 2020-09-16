@@ -36,6 +36,7 @@ return (
             <div>
                 <Field component={Textarea} name= {"addNewPost"} validate= {[required, maxLength50]}/>
             </div>
+            
             <div><button>Add post</button></div>
             
         </form>

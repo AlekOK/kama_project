@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
   
-    return(
+    return (
         
     <header className={sss.header}>
         

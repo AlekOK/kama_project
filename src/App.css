@@ -2,7 +2,8 @@
 
   max-width: 1400px;
   margin: 0 auto;
-  min-height: 100 hv;
+  min-height: 100vh;
+  height: 100vh;
   display: grid;
   grid-row-gap: 10px;
   grid-template-areas: 
@@ -19,7 +20,7 @@
 
     grid-area: c;
     background-color: lime;
-
+  
 
 }
 

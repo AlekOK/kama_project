@@ -11,7 +11,7 @@ export const getPage_size = (state) => {
 }
 
 export const getTotal_page = (state) => {
-    return state.usersPage.total_page;
+    return state.usersPage.total_item;
 }
 
 export const getCurrent_page = (state) => {

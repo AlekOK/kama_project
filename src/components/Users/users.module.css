@@ -14,7 +14,7 @@
     background-color: rgb(100, 100, 200);
 } 
 
-.in{
+.in {
     margin-left: 120px;
     background-color: rgb(100, 100, 200);
     font-weight: 900;
@@ -30,5 +30,19 @@
 
 .selectedPage {
     font-weight: 900;
+}
+
+.numberPage.selectedPage {
+    font-weight: 900;
+    border-color: black;
+}
+
+.pageNumber {
+    padding: 4px;
+    border: 1px solid grey;
+}
+
+.paginator {
+    margin: 10px;
 }
 

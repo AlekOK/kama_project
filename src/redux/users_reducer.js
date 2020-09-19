@@ -11,7 +11,7 @@ const TOGGEL_IS_FOLLOWING_PROGRESS = 'TOGGEL_IS_FOLLOWING_PROGRESS';
 let initialState =  {
     users_data: [],
     page_size: 49,
-    total_page: 200,
+    total_item: 200,
     current_page: 1,
     isFetching: false,
     followingInProgress: []
@@ -51,7 +51,7 @@ const usersReducer = (state = initialState, action) => {
         };
 
         case  GET_TOTAL_PAGE: {
-            return {...state, total_page: action.totalPage}
+            return {...state, total_item: action.totalPage}
         };
 
         case  TOGGEL_IS_FETCHING: {
@@ -83,6 +83,7 @@ export const getUsersThunk = (current_page, page_size) => {
 
     return async (dispatch) => {
         dispatch(setIsFetching(true));
+        dispatch(setCurrentPage(current_page));
 
         let data = await usersAPI.getUsers(current_page, page_size);
 

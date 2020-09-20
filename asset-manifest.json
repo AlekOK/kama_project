@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/kama_project/static/css/main.fe97ace8.chunk.css",
-    "main.js": "/kama_project/static/js/main.f267f567.chunk.js",
-    "main.js.map": "/kama_project/static/js/main.f267f567.chunk.js.map",
+    "main.css": "/kama_project/static/css/main.00ababdb.chunk.css",
+    "main.js": "/kama_project/static/js/main.f5353a7e.chunk.js",
+    "main.js.map": "/kama_project/static/js/main.f5353a7e.chunk.js.map",
     "runtime-main.js": "/kama_project/static/js/runtime-main.8bb5a8a1.js",
     "runtime-main.js.map": "/kama_project/static/js/runtime-main.8bb5a8a1.js.map",
-    "static/js/2.2fee383d.chunk.js": "/kama_project/static/js/2.2fee383d.chunk.js",
-    "static/js/2.2fee383d.chunk.js.map": "/kama_project/static/js/2.2fee383d.chunk.js.map",
+    "static/js/2.e63803e4.chunk.js": "/kama_project/static/js/2.e63803e4.chunk.js",
+    "static/js/2.e63803e4.chunk.js.map": "/kama_project/static/js/2.e63803e4.chunk.js.map",
     "index.html": "/kama_project/index.html",
-    "precache-manifest.423fccb679f610eeacc31d8bccfc9bfb.js": "/kama_project/precache-manifest.423fccb679f610eeacc31d8bccfc9bfb.js",
+    "precache-manifest.38f7037b77170bdf32bc57e69174a9b9.js": "/kama_project/precache-manifest.38f7037b77170bdf32bc57e69174a9b9.js",
     "service-worker.js": "/kama_project/service-worker.js",
-    "static/css/main.fe97ace8.chunk.css.map": "/kama_project/static/css/main.fe97ace8.chunk.css.map",
-    "static/js/2.2fee383d.chunk.js.LICENSE.txt": "/kama_project/static/js/2.2fee383d.chunk.js.LICENSE.txt"
+    "static/css/main.00ababdb.chunk.css.map": "/kama_project/static/css/main.00ababdb.chunk.css.map",
+    "static/js/2.e63803e4.chunk.js.LICENSE.txt": "/kama_project/static/js/2.e63803e4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8bb5a8a1.js",
-    "static/js/2.2fee383d.chunk.js",
-    "static/css/main.fe97ace8.chunk.css",
-    "static/js/main.f267f567.chunk.js"
+    "static/js/2.e63803e4.chunk.js",
+    "static/css/main.00ababdb.chunk.css",
+    "static/js/main.f5353a7e.chunk.js"
   ]
 }

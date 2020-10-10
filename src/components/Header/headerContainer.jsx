@@ -21,7 +21,7 @@ let mapStateToProps = (state) => {
     }
 };   
 
-export default connect(mapStateToProps, { logOut})(HeaderComponent);
+export default connect(mapStateToProps, { logOut })(HeaderComponent);
 
 
 

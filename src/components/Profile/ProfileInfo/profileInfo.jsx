@@ -2,11 +2,19 @@ import React from 'react';
 import sss from './profileInfo.module.css';
 import Preloader from '../../Common/Preloader/preloader';
 import ProfileStatusWithHook from './profileStatusWithHook';
+import noob from '../../../assets/images/users.jpg';
 
-const ProfileInfo = ({profile, status, updateStatus, ...props}) => {
+
+const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, ...props}) => {
 
     if ( !profile ) {
         return <Preloader/>
+    }
+
+    const onChangePhoto = (e) => {
+        if (e.target.files.length) {
+            savePhoto(e.target.files[0]);
+        }
     }
 
     return (
@@ -20,12 +28,16 @@ const ProfileInfo = ({profile, status, updateStatus, ...props}) => {
             <ProfileStatusWithHook status= {status}  updateStatus= {updateStatus}/>
             
             <br></br>
-            <div className={sss.profileInfoBlock}>
-              <img src= {profile.photos.large}></img>
+            <div >
+              <img src= { profile.photos.large || noob } className={sss.mainFoto}></img>
+            </div>
+
+            <div className= {sss.largePhoto}>
+              { isOwner && <input type= {"file"} onChange= {onChangePhoto}/> }
             </div>
 
             <div style= {{backgroundColor: 'white'}}>
-                {profile.fullName + profile.aboutMe}
+                {profile.fullName}
             </div>
 
         </div>    

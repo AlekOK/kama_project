@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/kama_project/static/css/main.27c03ecd.chunk.css",
-    "main.js": "/kama_project/static/js/main.a55ef288.chunk.js",
-    "main.js.map": "/kama_project/static/js/main.a55ef288.chunk.js.map",
-    "runtime-main.js": "/kama_project/static/js/runtime-main.421a2116.js",
-    "runtime-main.js.map": "/kama_project/static/js/runtime-main.421a2116.js.map",
-    "static/js/2.c1feec45.chunk.js": "/kama_project/static/js/2.c1feec45.chunk.js",
-    "static/js/2.c1feec45.chunk.js.map": "/kama_project/static/js/2.c1feec45.chunk.js.map",
+    "main.css": "/kama_project/static/css/main.56215577.chunk.css",
+    "main.js": "/kama_project/static/js/main.43eb69c6.chunk.js",
+    "main.js.map": "/kama_project/static/js/main.43eb69c6.chunk.js.map",
+    "runtime-main.js": "/kama_project/static/js/runtime-main.dba97a48.js",
+    "runtime-main.js.map": "/kama_project/static/js/runtime-main.dba97a48.js.map",
+    "static/js/2.259f050c.chunk.js": "/kama_project/static/js/2.259f050c.chunk.js",
+    "static/js/2.259f050c.chunk.js.map": "/kama_project/static/js/2.259f050c.chunk.js.map",
     "static/css/3.721d4d1c.chunk.css": "/kama_project/static/css/3.721d4d1c.chunk.css",
-    "static/js/3.024f9969.chunk.js": "/kama_project/static/js/3.024f9969.chunk.js",
-    "static/js/3.024f9969.chunk.js.map": "/kama_project/static/js/3.024f9969.chunk.js.map",
+    "static/js/3.4bc230f1.chunk.js": "/kama_project/static/js/3.4bc230f1.chunk.js",
+    "static/js/3.4bc230f1.chunk.js.map": "/kama_project/static/js/3.4bc230f1.chunk.js.map",
     "index.html": "/kama_project/index.html",
-    "precache-manifest.7e726a682a4abf42f456b6e320012de3.js": "/kama_project/precache-manifest.7e726a682a4abf42f456b6e320012de3.js",
+    "precache-manifest.28edb0ba3ac23698914b83cbdde48aea.js": "/kama_project/precache-manifest.28edb0ba3ac23698914b83cbdde48aea.js",
     "service-worker.js": "/kama_project/service-worker.js",
     "static/css/3.721d4d1c.chunk.css.map": "/kama_project/static/css/3.721d4d1c.chunk.css.map",
-    "static/css/main.27c03ecd.chunk.css.map": "/kama_project/static/css/main.27c03ecd.chunk.css.map",
-    "static/js/2.c1feec45.chunk.js.LICENSE.txt": "/kama_project/static/js/2.c1feec45.chunk.js.LICENSE.txt"
+    "static/css/main.56215577.chunk.css.map": "/kama_project/static/css/main.56215577.chunk.css.map",
+    "static/js/2.259f050c.chunk.js.LICENSE.txt": "/kama_project/static/js/2.259f050c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.421a2116.js",
-    "static/js/2.c1feec45.chunk.js",
-    "static/css/main.27c03ecd.chunk.css",
-    "static/js/main.a55ef288.chunk.js"
+    "static/js/runtime-main.dba97a48.js",
+    "static/js/2.259f050c.chunk.js",
+    "static/css/main.56215577.chunk.css",
+    "static/js/main.43eb69c6.chunk.js"
   ]
 }

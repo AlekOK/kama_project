@@ -47,6 +47,10 @@ export const profileAPI = {
             headers: {
                 'Content-Type': 'multipart/form-data'}
         });
+    },
+
+    updateProfile(profile) {
+        return instans.put(`profile`, profile );
     }
 };
 

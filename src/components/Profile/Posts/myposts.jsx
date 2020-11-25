@@ -7,7 +7,7 @@ import { Textarea } from '../../Common/FormsControls/formControlsTextArea';
 
 const Myposts = (props) => {
 
-let post_elements = props.post_data.map(el => <Post message= {el.message} key= {el.id} likeCount= {el.likeCount} />);
+let post_elements = props.post_data.map(el => <Post key= {el.id} message= {el.message} key= {el.id} likeCount= {el.likeCount} />);
 
 let onAddPosts = (values) => {
     props.addPostAction(values.addNewPost);

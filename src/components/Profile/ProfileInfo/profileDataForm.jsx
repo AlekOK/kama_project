@@ -5,6 +5,7 @@ import stl from './profileInfo.module.css';
 import style from '../../Common/FormsControls/formControlTextArea.module.css';
 
 const ProfileDataForm = ({handleSubmit, profile, error}) => {
+
     return (
         <form submit= {handleSubmit}>
             <div><button onClick= {handleSubmit}>Save</button></div>
@@ -33,7 +34,7 @@ const ProfileDataForm = ({handleSubmit, profile, error}) => {
                                      component={Input}/></b>
             </div>
             <br></br>
-            <div>
+            <div >
                 <b>Contacts : </b> {Object.keys(profile.contacts).map(key => { 
                  
                  if (key == "facebook" || key =="website" || key == "github") {

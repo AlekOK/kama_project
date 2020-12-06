@@ -1,3 +1,7 @@
+.ProfileInfo{
+    padding: 10px;
+    padding-right: 100px;
+}
 
 .profileInfoBlock img{
     width: 640px;
@@ -26,5 +30,9 @@
 }
 
 .contact {
-    padding: 10px;
+    padding: 20px;
+}
+
+.contactItems {
+    padding-left: 40px;
 }

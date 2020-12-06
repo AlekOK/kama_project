@@ -4,7 +4,7 @@ import Preloader from '../../Common/Preloader/preloader';
 import ProfileStatusWithHook from './profileStatusWithHook';
 import noob from '../../../assets/images/users.jpg';
 import ProfileDataForm from './profileDataForm';
-// import ProfileDataFormRedux from './profileDataForm';
+
 
 const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, saveProfile, ...props}) => {
 
@@ -21,15 +21,18 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
     }
 
     const onSubmit = (formData) => {
-        saveProfile(formData);
-        // setEditMode(false);
+        saveProfile(formData)
+        .then (() => {
+            setEditMode(false);
+        });
+      
     }
 
     return (
        
-        <div>
+        <div className= {sss.ProfileInfo}>
              <br></br>
-            <div style= {{backgroundColor: 'white'}}>
+            <div style= {{backgroundColor: 'white', color: 'red', fontSize: '20px', paddingLeft: '20px'}}>
                 {profile.fullName}
             </div>
 
@@ -80,7 +83,7 @@ const ProfileData = ({profile, status, isOwner, goToEditMode}) => {
                 <b>Contacts: {Object.keys(profile.contacts).map(key => { 
 
                     if (key == "facebook" || key =="website" || key == "github") {
-                        
+
                     return <Contact key= {key} contactTitle={key} contactValue= {profile.contacts[key]}/>
             }})}</b>
             </div>
@@ -90,7 +93,7 @@ const ProfileData = ({profile, status, isOwner, goToEditMode}) => {
 
 const Contact = ({contactTitle, contactValue}) => {
     return (
-        <div>
+        <div className= {sss.contactItems}>
             <b>{contactTitle}: {contactValue}</b>
         </div>
     )
